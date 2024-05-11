@@ -1,0 +1,19 @@
+$font1: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+  Arial, sans-serif;
+
+$black1: black;
+$white1: white;
+$color1: #d8d8d8;
+$color2: #000083;
+$color3: #b50000;
+$color4: goldenrod;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font1;
+}
