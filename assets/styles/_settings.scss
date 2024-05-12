@@ -3,10 +3,11 @@ $font1: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
 
 $black1: black;
 $white1: white;
-$color1: #d8d8d8;
+$color1: goldenrod;
 $color2: #000083;
 $color3: #b50000;
-$color4: goldenrod;
+$color4: #f1f1f1;
+$borderLi: darkgray;
 
 * {
   margin: 0;
@@ -16,4 +17,15 @@ $color4: goldenrod;
 
 body {
   font-family: $font1;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a,
+a:visited {
+  text-decoration: none;
 }

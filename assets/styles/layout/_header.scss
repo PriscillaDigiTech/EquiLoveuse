@@ -1,0 +1,133 @@
+header {
+  padding: 20px 0;
+  background: $color4;
+
+  h1 {
+    transition: 0.2s;
+    margin-bottom: 20px;
+
+    a {
+      color: $color1;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px $black1;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+
+      a {
+        color: $black1;
+        text-shadow: 1px 1px 1px $color1;
+      }
+    }
+  }
+
+  nav {
+    .menuIcons {
+      display: none;
+
+      @media screen and (max-width: 850px) {
+        display: block;
+
+        #openIcon {
+          display: block;
+        }
+
+        #closeIcon {
+          display: none;
+        }
+      }
+
+      i {
+        font-size: 1.7rem;
+        color: $black1;
+        text-shadow: 1px 1px 1px $color1;
+
+        &:hover {
+          color: $color1;
+          cursor: pointer;
+        }
+      }
+    }
+
+    ul {
+      display: block;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      @media screen and (max-width: 850px) {
+        display: none;
+      }
+
+      .liNav {
+        position: relative;
+        padding: 10px;
+
+        a {
+          color: $black1;
+        }
+
+        .liNavContainer {
+          display: none;
+          margin-top: 10px;
+          border-top: 2px solid $color1;
+
+          @media screen and (max-width: 850px) {
+            z-index: 100000;
+          }
+
+          ul {
+            list-style: none;
+            width: 250px;
+
+            li {
+              background: $color4;
+              width: 100%;
+              border-bottom: 1px solid $borderLi;
+
+              a {
+                padding: 20px;
+                display: flex;
+                height: 100%;
+                width: 100%;
+
+                &:hover {
+                  background: $color1;
+                }
+              }
+
+              &:hover {
+                a {
+                  color: $black1;
+                }
+              }
+            }
+          }
+        }
+
+        &:hover {
+          border: 1px solid $color1;
+
+          @media screen and (max-width: 850px) {
+            border: none;
+          }
+
+          .liNavContainer {
+            display: block;
+            position: absolute;
+
+            ul {
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
