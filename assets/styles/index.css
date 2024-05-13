@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Breathing Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Breathing Regular"), url("../fonts/Breathing.woff") format("woff");
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +23,15 @@ body {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Breathing Regular", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 a,
 a:visited {
   text-decoration: none;
@@ -27,7 +42,7 @@ header {
   background: #ffffff;
 }
 header .logo a {
-  color: #ff1493;
+  color: #ffb6c1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +82,7 @@ header nav .menuIcons i {
   color: #000000;
 }
 header nav .menuIcons i:hover {
-  color: #ff1493;
+  color: #ffb6c1;
   text-shadow: 1px 1px 1px #000000;
   cursor: pointer;
 }
@@ -94,11 +109,13 @@ header nav ul .liNav {
 }
 header nav ul .liNav a {
   color: #000000;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 header nav ul .liNav .liNavContainer {
   display: none;
   margin-top: 10px;
-  border-top: 2px solid #ff1493;
+  border-top: 2px solid #ffb6c1;
 }
 @media screen and (max-width: 850px) {
   header nav ul .liNav .liNavContainer {
@@ -110,26 +127,25 @@ header nav ul .liNav .liNavContainer ul {
   width: 250px;
 }
 header nav ul .liNav .liNavContainer ul li {
-  background: #f1f1f1;
+  background: #efefef;
   width: 100%;
-  border-bottom: 1px solid darkgray;
+  border-bottom: 1px solid #a9a9a9;
 }
 header nav ul .liNav .liNavContainer ul li a {
-  padding: 20px;
+  padding: 15px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
   width: 100%;
+  font-size: 1rem;
+  text-transform: none;
 }
 header nav ul .liNav .liNavContainer ul li a:hover {
-  background: #ff1493;
+  background: #ffb6c1;
 }
 header nav ul .liNav .liNavContainer ul li:hover a {
   color: #000000;
-}
-header nav ul .liNav:hover {
-  border: 1px solid #ff1493;
 }
 @media screen and (max-width: 850px) {
   header nav ul .liNav:hover {

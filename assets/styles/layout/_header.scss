@@ -66,6 +66,8 @@ header {
 
         a {
           color: $black1;
+          font-size: 1.1rem;
+          text-transform: uppercase;
         }
 
         .liNavContainer {
@@ -87,10 +89,12 @@ header {
               border-bottom: 1px solid $borderLi;
 
               a {
-                padding: 20px;
+                padding: 15px 20px;
                 display: flex;
                 height: 100%;
                 width: 100%;
+                font-size: 1rem;
+                text-transform: none;
 
                 &:hover {
                   background: $color1;
@@ -107,8 +111,6 @@ header {
         }
 
         &:hover {
-          border: 1px solid $color1;
-
           @media screen and (max-width: 850px) {
             border: none;
           }

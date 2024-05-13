@@ -1,13 +1,22 @@
-$font1: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+@font-face {
+  font-family: "Breathing Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Breathing Regular"), url("../fonts/Breathing.woff") format("woff");
+}
+
+$font1: "Breathing Regular", "Trebuchet MS", "Lucida Sans Unicode",
+  "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+
+$font2: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
   Arial, sans-serif;
 
 $black1: #000000;
 $white1: #ffffff;
-$color1: #ff1493;
-$color2: pink;
-$color3: #daa520;
-$color4: #f1f1f1;
-$borderLi: darkgray;
+$color1: #ffb6c1;
+$color2: #daa520;
+$color4: #efefef;
+$borderLi: #a9a9a9;
 $text: #333;
 
 * {
@@ -17,7 +26,7 @@ $text: #333;
 }
 
 body {
-  font-family: $font1;
+  font-family: $font2;
   text-align: center;
   color: $text;
   font-size: 1rem;
@@ -26,6 +35,15 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font1;
 }
 
 a,
