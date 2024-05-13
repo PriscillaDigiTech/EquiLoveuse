@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "parisienne";
+  src: url(../fonts/josephsophia.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +10,9 @@
 }
 
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: parisienne, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
+  color: #333;
 }
 
 .container {
@@ -30,9 +35,8 @@ header h1 {
   margin-bottom: 20px;
 }
 header h1 a {
-  color: goldenrod;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px black;
+  color: #ff1493;
+  text-shadow: 1px 1px 1px #000000;
 }
 header h1:hover {
   cursor: pointer;
@@ -40,8 +44,8 @@ header h1:hover {
           transform: scale(1.05);
 }
 header h1:hover a {
-  color: black;
-  text-shadow: 1px 1px 1px goldenrod;
+  color: #000000;
+  text-shadow: 1px 1px 1px #ff1493;
 }
 header nav .menuIcons {
   display: none;
@@ -59,11 +63,11 @@ header nav .menuIcons {
 }
 header nav .menuIcons i {
   font-size: 1.7rem;
-  color: black;
-  text-shadow: 1px 1px 1px goldenrod;
+  color: #000000;
+  text-shadow: 1px 1px 1px #ff1493;
 }
 header nav .menuIcons i:hover {
-  color: goldenrod;
+  color: #ff1493;
   cursor: pointer;
 }
 header nav ul {
@@ -88,12 +92,12 @@ header nav ul .liNav {
   padding: 10px;
 }
 header nav ul .liNav a {
-  color: black;
+  color: #000000;
 }
 header nav ul .liNav .liNavContainer {
   display: none;
   margin-top: 10px;
-  border-top: 2px solid goldenrod;
+  border-top: 2px solid #ff1493;
 }
 @media screen and (max-width: 850px) {
   header nav ul .liNav .liNavContainer {
@@ -118,13 +122,13 @@ header nav ul .liNav .liNavContainer ul li a {
   width: 100%;
 }
 header nav ul .liNav .liNavContainer ul li a:hover {
-  background: goldenrod;
+  background: #ff1493;
 }
 header nav ul .liNav .liNavContainer ul li:hover a {
-  color: black;
+  color: #000000;
 }
 header nav ul .liNav:hover {
-  border: 1px solid goldenrod;
+  border: 1px solid #ff1493;
 }
 @media screen and (max-width: 850px) {
   header nav ul .liNav:hover {
