@@ -39,7 +39,6 @@ a:visited {
 
 header {
   padding: 20px 0;
-  background: #ffffff;
 }
 header .logo a {
   color: #ffb6c1;
@@ -65,6 +64,7 @@ header .logo a:hover {
 }
 header nav .menuIcons {
   display: none;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 850px) {
   header nav .menuIcons {
@@ -126,6 +126,12 @@ header nav ul .liNav .liNavContainer ul {
   list-style: none;
   width: 250px;
 }
+@media screen and (max-width: 850px) {
+  header nav ul .liNav .liNavContainer ul {
+    width: 87vw;
+    margin: 0 auto;
+  }
+}
 header nav ul .liNav .liNavContainer ul li {
   background: #efefef;
   width: 100%;
@@ -172,4 +178,11 @@ header nav ul .liNav:hover .liNavContainer ul {
 
 section {
   padding: 50px 0;
+}
+
+footer {
+  padding: 20px 0;
+  background: #ffb6c1;
+  color: #000000;
+  border-top: 2px solid #000000;
 }/*# sourceMappingURL=index.css.map */
