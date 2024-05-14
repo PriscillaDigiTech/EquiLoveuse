@@ -14,10 +14,14 @@ function windowLoad() {
 
 function openMenu() {
   menuNav.style.display = "block";
+  openIcon.style.display = "none";
+  closeIcon.style.display = "block";
 }
 
 //closeMenu() = ouvrir le menu de navigation
 
 function closeMenu() {
   menuNav.style.display = "none";
+  closeIcon.style.display = "none";
+  openIcon.style.display = "block";
 }

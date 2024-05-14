@@ -1,9 +1,8 @@
 header {
   padding: 20px 0;
-
+  background: $black1;
   .logo {
     a {
-      color: $color1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -11,11 +10,13 @@ header {
 
       img {
         width: 50%;
+        filter: invert(100%);
       }
 
       &:hover {
         cursor: pointer;
-        transform: scale(1.05);
+        transform: scale(1.02);
+        filter: drop-shadow(0 0 10px $color1);
       }
     }
   }
@@ -39,11 +40,10 @@ header {
 
       i {
         font-size: 1.7rem;
-        color: $black1;
+        color: $white1;
 
         &:hover {
-          color: $color1;
-          text-shadow: 1px 1px 1px $black1;
+          text-shadow: 0 0 10px $color1;
           cursor: pointer;
         }
       }
@@ -65,7 +65,7 @@ header {
         padding: 10px;
 
         a {
-          color: $black1;
+          color: $white1;
           font-size: 1.1rem;
           text-transform: uppercase;
         }
@@ -89,7 +89,7 @@ header {
             }
 
             li {
-              background: $color4;
+              background: $black1;
               width: 100%;
               border-bottom: 1px solid $borderLi;
 
@@ -100,6 +100,7 @@ header {
                 width: 100%;
                 font-size: 1rem;
                 text-transform: none;
+                color: $white1;
 
                 &:hover {
                   background: $color1;
@@ -118,6 +119,10 @@ header {
         &:hover {
           @media screen and (max-width: 850px) {
             border: none;
+          }
+
+          a {
+            text-shadow: 0 0 10px $color1;
           }
 
           .liNavContainer {
