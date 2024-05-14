@@ -197,4 +197,30 @@ footer {
   background: #000000;
   color: #ffffff;
   border-top: 2px solid #ffb6c1;
+}
+
+.hero {
+  background: url(../img/1.jpg) center/cover;
+  padding: 0;
+}
+.hero .container {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 50px 0;
+}
+.hero .container img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+@media screen and (max-width: 850px) {
+  .hero .container img {
+    width: 100%;
+  }
+}
+.hero .container h2 {
+  padding-bottom: 30px;
+  color: #ffffff;
 }/*# sourceMappingURL=index.css.map */
