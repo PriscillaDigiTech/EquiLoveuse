@@ -124,11 +124,7 @@ header nav ul .liNav .liNavContainer {
   display: none;
   margin-top: 10px;
   border-top: 2px solid #ffb6c1;
-}
-@media screen and (max-width: 850px) {
-  header nav ul .liNav .liNavContainer {
-    z-index: 100000;
-  }
+  z-index: 100000;
 }
 header nav ul .liNav .liNavContainer ul {
   list-style: none;
@@ -186,6 +182,9 @@ header nav ul .liNav:hover .liNavContainer ul {
       -ms-flex-align: start;
           align-items: start;
   text-align: left;
+}
+header nav ul .liNav:hover .liNavContainer ul a {
+  text-shadow: none;
 }
 
 section {

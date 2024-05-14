@@ -80,10 +80,7 @@ header {
           display: none;
           margin-top: 10px;
           border-top: 2px solid $color1;
-
-          @media screen and (max-width: 850px) {
-            z-index: 100000;
-          }
+          z-index: 100000;
 
           ul {
             list-style: none;
@@ -140,6 +137,10 @@ header {
               flex-direction: column;
               align-items: start;
               text-align: left;
+
+              a {
+                text-shadow: none;
+              }
             }
           }
         }
