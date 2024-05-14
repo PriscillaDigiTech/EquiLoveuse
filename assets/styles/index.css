@@ -29,7 +29,36 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Breathing Regular", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #000000;
+}
+
+h2 {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffb6c1;
+}
+
+.h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.h2 img {
+  width: 250px;
+  margin-left: 10px;
 }
 
 a,
@@ -222,4 +251,53 @@ footer {
 .hero .container h2 {
   padding-bottom: 30px;
   color: #ffffff;
+  text-transform: none;
+  font-size: 1.4rem;
+}
+
+.mot .container {
+  -webkit-box-shadow: 0 0 10px #ffb6c1;
+          box-shadow: 0 0 10px #ffb6c1;
+  padding: 50px;
+}
+.mot .container p i {
+  color: #ffb6c1;
+  font-size: 1.5rem;
+}
+.mot .container p .signature {
+  padding: 30px 0 5px;
+  display: block;
+  font-family: "Breathing Regular", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+}
+.mot .container p .role {
+  font-size: 0.9rem;
+}
+
+.actus {
+  background: #000000;
+}
+.actus h2,
+.actus p,
+.actus h3 {
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.actus .actusContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.actus .actusContainer div {
+  -webkit-box-shadow: 0 0 10px #ffb6c1;
+          box-shadow: 0 0 10px #ffb6c1;
+}
+.actus .actusContainer div a img {
+  width: 100%;
+}
+.actus .actusContainer div a h3 {
+  padding: 30px 0;
+}
+.actus .actusContainer div a p {
+  margin: 0 30px;
 }/*# sourceMappingURL=index.css.map */
