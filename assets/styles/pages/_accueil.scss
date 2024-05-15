@@ -56,8 +56,7 @@
   background: $black1;
 
   h2,
-  p,
-  h3 {
+  p {
     color: $white1;
     padding-bottom: 30px;
   }
@@ -88,7 +87,9 @@
         }
 
         h3 {
-          padding: 30px 0;
+          margin: 30px;
+          padding-bottom: 30px;
+          color: $color1;
           transition: 0.2s;
         }
 
