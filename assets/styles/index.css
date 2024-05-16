@@ -66,6 +66,33 @@ a:visited {
   text-decoration: none;
 }
 
+.button {
+  border: none;
+  background: none;
+  margin: 30px auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.button a {
+  padding: 10px 20px;
+  border: 1px solid #ffb6c1;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 1rem;
+  -webkit-box-shadow: 0 0 5px #ffb6c1;
+          box-shadow: 0 0 5px #ffb6c1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.button a:hover {
+  -webkit-box-shadow: 0 0 10px #ffb6c1;
+          box-shadow: 0 0 10px #ffb6c1;
+}
+.button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
 header {
   padding: 20px 0;
   background: #000000;
@@ -315,5 +342,47 @@ footer {
   transition: 0.2s;
 }
 .actus .actusContainer div a p {
+  margin: 0 30px;
+}
+
+.articles h2,
+.articles p {
+  padding-bottom: 30px;
+}
+.articles p {
+  color: #333;
+}
+.articles .articlesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.articles .articlesContainer div {
+  border: 1px solid #ffb6c1;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.articles .articlesContainer div:hover {
+  -webkit-box-shadow: 0 0 10px #ffb6c1;
+          box-shadow: 0 0 10px #ffb6c1;
+}
+.articles .articlesContainer div:hover img,
+.articles .articlesContainer div:hover h3 {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.articles .articlesContainer div a img {
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.articles .articlesContainer div a h3 {
+  margin: 30px;
+  padding-bottom: 30px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.articles .articlesContainer div a p {
   margin: 0 30px;
 }/*# sourceMappingURL=index.css.map */
