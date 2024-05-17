@@ -75,8 +75,9 @@ a:visited {
 }
 .button a {
   padding: 10px 20px;
-  border: 1px solid #ffb6c1;
-  color: #000000;
+  border: 2px solid #ffb6c1;
+  background: #000000;
+  color: #ffb6c1;
   text-transform: uppercase;
   font-size: 1rem;
   -webkit-box-shadow: 0 0 5px #ffb6c1;
@@ -195,7 +196,7 @@ header nav ul .liNav .liNavContainer ul {
 header nav ul .liNav .liNavContainer ul li {
   background: #000000;
   width: 100%;
-  border-bottom: 1px solid #a9a9a9;
+  border-bottom: 1px solid #ffb6c1;
 }
 header nav ul .liNav .liNavContainer ul li a {
   padding: 15px 20px;
