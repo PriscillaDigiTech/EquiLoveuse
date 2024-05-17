@@ -95,7 +95,7 @@ a:visited {
 }
 
 header {
-  padding: 20px 0;
+  padding: 50px 0 20px;
   background: #000000;
   border-bottom: 2px solid #ffb6c1;
 }
@@ -111,11 +111,14 @@ header .logo a {
           justify-content: center;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  -webkit-filter: drop-shadow(0 0 10px #ffb6c1);
+          filter: drop-shadow(0 0 10px #ffb6c1);
 }
 header .logo a img {
   width: 50%;
   -webkit-filter: invert(100%);
           filter: invert(100%);
+  padding-bottom: 20px;
 }
 @media screen and (max-width: 850px) {
   header .logo a img {
@@ -126,8 +129,6 @@ header .logo a:hover {
   cursor: pointer;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  -webkit-filter: drop-shadow(0 0 10px #ffb6c1);
-          filter: drop-shadow(0 0 10px #ffb6c1);
 }
 header nav .menuIcons {
   display: none;
@@ -258,18 +259,19 @@ footer {
 .hero {
   background: url(../img/1.jpg) center/cover;
   padding: 0;
+  border-bottom: 2px solid #ffb6c1;
 }
 .hero .container {
-  background: rgba(0, 0, 0, 0.8);
   width: 100%;
-  padding: 50px 0;
+  background: rgba(255, 182, 193, 0.5);
+  padding: 150px 50px;
 }
 .hero .container img {
   display: block;
   width: 50%;
   margin: 0 auto;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  -webkit-filter: drop-shadow(0 0 5px #ffffff);
+          filter: drop-shadow(0 0 5px #ffffff);
 }
 @media screen and (max-width: 850px) {
   .hero .container img {
@@ -278,9 +280,9 @@ footer {
 }
 .hero .container h2 {
   padding-bottom: 30px;
-  color: #ffffff;
   text-transform: none;
   font-size: 1.4rem;
+  text-shadow: 0 0 5px #ffffff;
 }
 
 .mot .container {
@@ -303,12 +305,20 @@ footer {
 }
 
 .actus {
-  background: #000000;
+  background: url(../img/equiloveuse-icon-bg.png) repeat center/contain;
+  background-size: 100px;
+  margin: 0;
+  padding: 0;
+}
+.actus .container {
+  width: 100%;
+  background: rgba(255, 182, 193, 0.8);
+  padding: 50px;
 }
 .actus h2,
 .actus p {
-  color: #ffffff;
   padding-bottom: 30px;
+  text-shadow: 0 0 5px #ffffff;
 }
 .actus .actusContainer {
   display: grid;
@@ -320,6 +330,7 @@ footer {
   overflow: hidden;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  background: #ffffff;
 }
 .actus .actusContainer div:hover {
   -webkit-box-shadow: 0 0 10px #ffb6c1;
@@ -338,12 +349,12 @@ footer {
 .actus .actusContainer div a h3 {
   margin: 30px;
   padding-bottom: 30px;
-  color: #ffb6c1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 .actus .actusContainer div a p {
   margin: 0 30px;
+  color: #333;
 }
 
 .articles h2,

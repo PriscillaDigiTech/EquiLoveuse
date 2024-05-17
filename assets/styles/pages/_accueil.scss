@@ -1,17 +1,18 @@
 .hero {
   background: url(../img/1.jpg) center/cover;
   padding: 0;
+  border-bottom: 2px solid $color1;
 
   .container {
-    background: $blackBg;
     width: 100%;
-    padding: 50px 0;
+    background: $pinkBg;
+    padding: 150px 50px;
 
     img {
       display: block;
       width: 50%;
       margin: 0 auto;
-      filter: invert(100%);
+      filter: drop-shadow(0 0 5px $white1);
 
       @media screen and (max-width: 850px) {
         width: 100%;
@@ -20,9 +21,9 @@
 
     h2 {
       padding-bottom: 30px;
-      color: $white1;
       text-transform: none;
       font-size: 1.4rem;
+      text-shadow: 0 0 5px $white1;
     }
   }
 }
@@ -53,12 +54,21 @@
 }
 
 .actus {
-  background: $black1;
+  background: url(../img/equiloveuse-icon-bg.png) repeat center/contain;
+  background-size: 100px;
+  margin: 0;
+  padding: 0;
+
+  .container {
+    width: 100%;
+    background: $pinkBg2;
+    padding: 50px;
+  }
 
   h2,
   p {
-    color: $white1;
     padding-bottom: 30px;
+    text-shadow: 0 0 5px $white1;
   }
 
   .actusContainer {
@@ -70,6 +80,7 @@
       border: 1px solid $color1;
       overflow: hidden;
       transition: 0.2s;
+      background: $white1;
 
       &:hover {
         box-shadow: 0 0 10px $color1;
@@ -77,7 +88,6 @@
         img,
         h3 {
           transform: scale(1.05);
-          // box-sizing: border-box;
         }
       }
       a {
@@ -89,12 +99,12 @@
         h3 {
           margin: 30px;
           padding-bottom: 30px;
-          color: $color1;
           transition: 0.2s;
         }
 
         p {
           margin: 0 30px;
+          color: $text;
         }
       }
     }
